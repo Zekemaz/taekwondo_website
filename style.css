@@ -1,35 +1,90 @@
+/* HEADER SECTION */
 body{
     background-image: url("image/body_background.png");
     background-size: cover;
     /* background-color: #202124; */
     width: 100%;
     height: 100%;
+    font-family: 'Heebo', sans-serif;
+
 }
 
-#lexical_img{
-    /* Layout Properties */
-    width: 300px;
-    height: 200px;
-    /* UI Properties */
-    opacity: 1;
-    border-radius: 100px;
-}
-
-#nav{
-    border: 3px red solid;
+section#nav {
     margin-bottom: 100px;
+    height: 70px;
     background-color:#08489F;
     margin-top: -10px;
     margin-left: -8px;
 }
-#nav > ul{
+
+section#nav > nav{
+    margin-bottom: 100px;
+    background-color:#08489F;
+    border: 1px #4575b7 solid;
+    margin-top: -10px;
+    margin-left: -8px;
+    height: 70px;
+}
+section#nav > nav > ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    margin-left: 600px;
+    height: 70px;
+    justify-content: flex-end;
+    margin: 0px 0 0px 0;
 }
-div{
-    /* border: 3px orange solid; */
+section#nav > nav > ul > li{
+    display: flex;
+}
+section#nav > nav > ul > li > a{
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+    color:#212024;  
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 2px #4575b7 outset;
+    
+}
+section#nav > nav > ul > li >  a:hover{
+    color:#08489F;  
+    background-color: #fff;
+}
+section#nav > nav > ul > li >  a:active{
+    color:#fff;  
+    background-color: #202124;
+}
+/*  END HEADER
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+*/
+/* MAIN SECTION */
+
+div#presentation{
+    margin: 150px 0px 100px 20%;
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    background-color: #08489f;
+    border-radius: 100px;
+    box-shadow: 0 1px 5px #08080A;
+}
+div#presentation > p{
+    font-size: 25px;
+    color: white;
+    padding:25px 25px 25px 25px ;
 }
 
 div#lexical_history{
@@ -37,42 +92,101 @@ div#lexical_history{
 }
 
 div#lexical{
-    width: 300px;
+    width: 320px;
     height: 300px;
     float: left;
     margin-left: 100px;
-    border-radius: 100px;
     overflow: hidden;
-    background-color: #fff;
+    /* background-color: #D8DADB; */
     
+}
+#lexical_img{
+    /* Layout Properties */
+    width: 300px;
+    height: 200px;
+    /* UI Properties */
+    opacity: 1;
+    border-radius: 100px;
+    border: 3px solid #D8DADB;
+    box-shadow: 0 0.5px 3px #08080A;
+}
+div#lexical p{
+    background-color: #fff;
+    /* border: 2px red solid; */
+    border-radius: 100px;
+    width: 150px;
+    margin: 0 75px 0 75px;
+    padding: 5px 5px 5px 5px ;
+}
+div#lexical p:hover{
+    background-color: #08489f;
+    color: #fff;
 }
 
 div#history{
-    width: 300px;
+    width: 320px;
     height: 300px;
     float: right;
     margin-right: 100px;
-    border-radius: 100px;
     overflow: hidden;
+    /* background-color: #D8DADB; */
+}
+#history_img{
+    /* Layout Properties */
+    width: 300px;
+    height: 200px;
+    /* UI Properties */
+    opacity: 1;
+    border-radius: 100px;
+    border: 3px solid #D8DADB;
+    box-shadow: 0 0.5px 3px #08080A;
+}
+div#history p{
     background-color: #fff;
-
-   
+    /* border: 2px red solid; */
+    border-radius: 100px;
+    width: 150px;
+    display: flex;
+    margin: 0 75px 0 75px;
+    padding: 5px 5px 5px 5px ;
+}
+div#history p:hover{
+    background-color: #08489f;
+    color: #fff;
 }
 
 div#poomsae{
-    width: 300px;
+    width: 320px;
     height: 300px;
     clear: both;
     margin: auto;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    border-radius: 100px;
+    margin-bottom: 200px;
     overflow: hidden;
-    background-color: #fff;
-
-
-
+    /* background-color: #202124; */
 }
+#poomsae_img{
+    /* Layout Properties */
+    width: 300px;
+    height: 200px;
+    /* UI Properties */
+    opacity: 1;
+    border-radius: 100px;
+    border: 3px solid #D8DADB;
+    box-shadow: 0 0.5px 3px #08080A;
+}
+div#poomsae p{
+    background-color: #08489f;
+    /* border: 2px red solid; */
+    border-radius: 100px;
+    width: 150px;
+    margin: 0 75px 0 75px;
+    padding: 5px 5px 5px 5px ;
+}
+div#poomsae p:hover{
+    background-color: #fff;
+    color: #08489f;
+}
+
 #lexical > a#link1{
     color: #08489f;
     cursor: grab;
@@ -96,7 +210,7 @@ div#poomsae{
     cursor: grabbing;
 }
 #poomsae > a{
-    color: #08489F;
+    color: #fff;
     cursor: grab;
     font-size: 25px;
     font-family: 'Heebo', sans-serif;
@@ -109,3 +223,42 @@ div#poomsae{
 
 
 
+/*  END MAIN
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+*/
+
+/* FOOTER SECTION */
+
+/*  END FOOTER
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+---------------
+*/ 
