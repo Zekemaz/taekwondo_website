@@ -1,0 +1,111 @@
+body{
+    background-image: url("image/body_background.png");
+    background-size: cover;
+    /* background-color: #202124; */
+    width: 100%;
+    height: 100%;
+}
+
+#lexical_img{
+    /* Layout Properties */
+    width: 300px;
+    height: 200px;
+    /* UI Properties */
+    opacity: 1;
+    border-radius: 100px;
+}
+
+#nav{
+    border: 3px red solid;
+    margin-bottom: 100px;
+    background-color:#08489F;
+    margin-top: -10px;
+    margin-left: -8px;
+}
+#nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 600px;
+}
+div{
+    /* border: 3px orange solid; */
+}
+
+div#lexical_history{
+    height: 300px;
+}
+
+div#lexical{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #fff;
+    
+}
+
+div#history{
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin-right: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #fff;
+
+   
+}
+
+div#poomsae{
+    width: 300px;
+    height: 300px;
+    clear: both;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #fff;
+
+
+
+}
+#lexical > a#link1{
+    color: #08489f;
+    cursor: grab;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: 0;
+    text-align: center;
+}
+#lexical > a#link1:active{
+    cursor: grabbing;
+}
+#history > a#link2{
+    color: #08489f;
+    cursor: grab;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: 0;
+    text-align: center;
+}
+#history > a#link2:active{
+    cursor: grabbing;
+}
+#poomsae > a{
+    color: #08489F;
+    cursor: grab;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: 0;
+    text-align: center;
+}
+#poomsae > a#link3:active{
+    cursor: grabbing;
+}
+
+
+
